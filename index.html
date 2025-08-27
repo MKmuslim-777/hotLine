@@ -15,8 +15,8 @@
     <title>Emergency Hotline Service</title>
 </head>
 <body>
-    <header class=" my-6">
-        <nav class="flex justify-between items-center md:max-w-[1450px] mx-auto">
+    <header class=" mt-6">
+        <nav class="flex justify-between items-center md:max-w-[1650px] mx-auto">
             <div class="flex">
                 <img src="./assets/logo.png" class="w-18" alt="">
                 <div>
@@ -50,15 +50,15 @@
         </div>
     </header>
 
-    <main class="">
-      <section class="md:max-w-[1800px] mx-auto">
+    <main class="bg-[#F5FFF6] w-full">
+      <section class="md:max-w-[1800px] mx-auto ">
 
         <section
         id="products-container"
-        class="w-11/12 mx-auto grid grid-cols-12 mt-28 gap-8"
+        class="w-11/12 mx-auto grid grid-cols-12 gap-8 "
       >
         <!-- Cards Container -->
-        <section id="product-box" class="col-span-9 bg-green-300 grid grid-cols-3 gap-5">
+        <section id="product-box" class="col-span-9 grid grid-cols-3 gap-5 mt-28 pb-20">
         <!-- Emergency Call -->
           <div class="card-container rounded-xl">
             <div class="bg-white p-8 border border-gray-300 shadow-lg rounded-2xl">
@@ -339,7 +339,24 @@
         </section>
 
         <!-- Calls History -->
-        <aside class="col-span-3 bg-green-900 h-[550px]" id="cart-box">
+        <aside class="col-span-3 mt-28 rounded-xl bg-white h-[1050px] border border-gray-300 shadow-xl p-7" id="cart-box">
+            <div class="call-history-header flex justify-between items-center">
+                <h1 class="text-[20px] font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
+                <button class="text-[20px] font-semibold text-white py-3 px-8 rounded-[45px] bg-[#00A63E]">Clear</button>
+
+            </div>
+
+            <!-- History -->
+            <div class="history">
+                <div class="flex justify-between p-6 items-center bg-gray-100 rounded-xl mt-5">
+                    <div>
+                        <h3 class="text-[18px] font-semibold">জাতীয় জরুরি সেবা</h3>
+                        <p class="text-gray-700 text-[16px] mt-3">999</p>
+                    </div>
+                    <p class="text-[18px] font-semibold ml-4">11:36:58 AM</p>
+                </div>
+
+            </div>
           
         </aside>
       </section>
