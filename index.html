@@ -15,38 +15,38 @@
     <title>Emergency Hotline Service</title>
 </head>
 <body>
-    <header class=" mt-6">
-        <nav class="flex justify-between items-center md:max-w-[1650px] mx-auto">
+    <header class="">
+        <nav class="p-2 md:flex md:justify-between md:items-center md:max-w-[1650px] mx-auto">
             <div class="flex">
                 <img src="./assets/logo.png" class="w-18" alt="">
                 <div>
                     <h1 class="text-[#006747] text-[24px] font-extrabold ml-2">Emergency <br>Service</h1>
                 </div>
             </div>
-            <div class="flex">
+            <div class=" md:flex mt-8 md:mt-3">
                 <!-- Heart Container -->
-                <div class="py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8">
-                    <p class="text-[30px] font-semibold">0</p>
+                <div class=" mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8">
+                    <p class=" text-[30px] font-semibold">0</p>
                     <img src="./assets/heart.png" class="w-12 ml-3" alt="">
                 </div>
 
                 <!-- Coin Container -->
-                <div class="py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8">
+                <div class="mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8">
                     <p class="text-[30px] font-semibold">100</p>
                     <img src="./assets/coin.png" class="w-12 ml-3" alt="">
                 </div>
 
                 <!-- copy Btn in Navbar -->
-                <div class="py-3 px-11 rounded-[45px] bg-[#00A63E] flex items-center">
+                <div class="mt-4 py-3 px-11 rounded-[45px] bg-[#00A63E] flex items-center">
                     <p class="text-[24px] font-semibold text-white"><span>2</span> Copy</p>
                 </div>
             </div>
         </nav>
-        <div class="banner w-full bg-gradient-to-r from-[#013324] via-[#006546] to-[#013324] h-[350px] mt-6 flex flex-col justify-start items-center">
+        <div class="banner w-full bg-gradient-to-r from-[#013324] via-[#006546] to-[#013324] h-[400px] md:h-[350px] mt-6 flex flex-col justify-start items-center p-4">
 
             <img src="./assets/logo-dark.png" alt="" class="max-w-[110px] mt-11">
-            <h1 class="text-white mt-7 font-bold text-[45px]">জরুরি সেবা ডিরেক্টরি</h1>
-            <p class="text-white font-semibold mt-3 text-[22px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <h1 class="text-white mt-7 font-bold text-[22px] md:text-[45px] ">জরুরি সেবা ডিরেক্টরি</h1>
+            <p class="text-white text-center font-semibold mt-3 md:text-[22px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
         </div>
     </header>
 
@@ -55,10 +55,10 @@
 
         <section
         id="products-container"
-        class="w-11/12 mx-auto grid grid-cols-12 gap-8 "
+        class="md:w-11/12 mx-auto grid md:grid-cols-12 gap-8 p-3"
       >
         <!-- Cards Container -->
-        <section id="product-box" class="col-span-9 grid grid-cols-3 gap-5 mt-28 pb-20">
+        <section id="product-box" class="md:col-span-9 grid md:grid-cols-3 gap-5 mt-28 pb-20">
         <!-- Emergency Call -->
           <div class="card-container rounded-xl">
             <div class="bg-white p-8 border border-gray-300 shadow-lg rounded-2xl">
@@ -339,7 +339,7 @@
         </section>
 
         <!-- Calls History -->
-        <aside class="col-span-3 mt-28 rounded-xl bg-white h-[1050px] border border-gray-300 shadow-xl p-7" id="cart-box">
+        <aside class="md:col-span-3  md:mt-28 rounded-xl bg-white h-[1050px] border border-gray-300 shadow-xl p-7" id="cart-box">
             <div class="call-history-header flex justify-between items-center">
                 <h1 class="text-[20px] font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
                 <button class="text-[20px] font-semibold text-white py-3 px-8 rounded-[45px] bg-[#00A63E]">Clear</button>
