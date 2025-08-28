@@ -15,6 +15,7 @@ for (const heart of hearts){
 
 function handleCopy(id){
     const number = getElement(id).innerText;
+    alert("নম্বর কপি হয়েছেঃ " + number);
     navigator.clipboard.writeText(number);
     const availableCopy = getElement("available-copy").innerText;
     const sumCopy = Number(availableCopy) + 1;
