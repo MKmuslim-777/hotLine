@@ -24,25 +24,27 @@
                 </div>
             </div>
             <div class=" md:flex mt-8 md:mt-3">
-                <!-- Heart Container -->
-                <div class=" mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8">
-                    <p class=" text-[30px] font-semibold">0</p>
-                    <img src="./assets/heart.png" class="w-12 ml-3" alt="">
-                </div>
+                <div class="flex ">
+                    <!-- Heart Container -->
+                    <div  class=" mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8 cursor-pointer">
+                        <p id="available-heart" class=" text-[30px] font-semibold">0</p>
+                        <img src="./assets/heart.png" class="w-12 ml-3" alt="">
+                    </div>
 
-                <!-- Coin Container -->
-                <div class="mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8">
-                    <p class="text-[30px] font-semibold">100</p>
-                    <img src="./assets/coin.png" class="w-12 ml-3" alt="">
+                    <!-- Coin Container -->
+                    <div  class="mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8 cursor-pointer">
+                        <p id="available-coin" class="text-[30px] font-semibold">100</p>
+                        <img src="./assets/coin.png" class="w-12 ml-3" alt="">
+                    </div>
                 </div>
 
                 <!-- copy Btn in Navbar -->
-                <div class="mt-4 py-3 px-11 rounded-[45px] bg-[#00A63E] flex items-center">
-                    <p class="text-[24px] font-semibold text-white"><span>2</span> Copy</p>
+                <div class="mt-4 py-3 cursor-pointer px-11 rounded-[45px] bg-[#00A63E] flex items-center">
+                    <p class="text-[24px] font-semibold text-white"><span id="available-copy">2</span> Copy</p>
                 </div>
             </div>
         </nav>
-        <div class="banner w-full bg-gradient-to-r from-[#013324] via-[#006546] to-[#013324] h-[400px] md:h-[350px] mt-6 flex flex-col justify-start items-center p-4">
+        <div class="banner w-full bg-gradient-to-r from-[#013324] via-[#006546] to-[#013324] h-[400px] md:h-[350px] mt-3 flex flex-col justify-start items-center p-4">
 
             <img src="./assets/logo-dark.png" alt="" class="max-w-[110px] mt-11">
             <h1 class="text-white mt-7 font-bold text-[22px] md:text-[45px] ">জরুরি সেবা ডিরেক্টরি</h1>
@@ -69,22 +71,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">জাতীয় জরুরি সেবা</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">National Emergency</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">999</h1>
+                    <h1 id="emergency-title" class="font-bold text-[24px] mt-2.5 ">জাতীয় জরুরি সেবা</h1>
+                    <p id="emergency-sub-title" class="mt-2.5  text-[20px] text-gray-500">National Emergency</p>
+                    <h1 id="emergency-number" class="font-bold text-[28px] mt-4 ">999</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">সার্বজনীন</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="emergency-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="emergency-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -99,22 +101,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">পুলিশ</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Police</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">999</h1>
+                    <h1 id="police-title" class="font-bold text-[24px] mt-2.5 ">পুলিশ</h1>
+                    <p id="police-sub-title" class="mt-2.5  text-[20px] text-gray-500">Police</p>
+                    <h1 id="police-number" class="font-bold text-[28px] mt-4 ">999</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">পুলিশ</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="police-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -129,22 +131,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">ফায়ার সার্ভিস</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Fire Service</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">999</h1>
+                    <h1 id="fire-title" class="font-bold text-[24px] mt-2.5 ">ফায়ার সার্ভিস</h1>
+                    <p id="fire-sub-title" class="mt-2.5  text-[20px] text-gray-500">Fire Service</p>
+                    <h1 id="fire-number" class="font-bold text-[28px] mt-4 ">999</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">ফায়ার</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="fire-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="fire-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -160,22 +162,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">অ্যাম্বুলেন্স</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Ambulance</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">1994-999999</h1>
+                    <h1 id="ambulance-title" class="font-bold text-[24px] mt-2.5 ">অ্যাম্বুলেন্স</h1>
+                    <p id="ambulance-sub-title" class="mt-2.5  text-[20px] text-gray-500">Ambulance</p>
+                    <h1 id="ambulance-number" class="font-bold text-[28px] mt-4 ">1994-999999</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">স্বাস্থ্য</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="ambulance-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="ambulance-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -191,22 +193,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">নারী ও শিশু সহায়তা</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Women & Child Helpline</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">109</h1>
+                    <h1 id="women-title" class="font-bold text-[24px] mt-2.5 ">নারী ও শিশু সহায়তা</h1>
+                    <p id="women-sub-title" class="mt-2.5  text-[20px] text-gray-500">Women & Child Helpline</p>
+                    <h1 id="women-number" class="font-bold text-[28px] mt-4 ">109</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">সহায়তা</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="women-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="women-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -222,22 +224,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">দুদক</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Anti-corruption</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">106</h1>
+                    <h1 id="anti-title" class="font-bold text-[24px] mt-2.5 ">দুদক</h1>
+                    <p id="anti-sub-title" class="mt-2.5  text-[20px] text-gray-500">Anti-corruption</p>
+                    <h1 id="anti-number" class="font-bold text-[28px] mt-4 ">106</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">সরকারি</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="anti-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="anti-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -253,22 +255,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">বিদ্যুৎ বিভ্রাট</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Electricity Outage</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">16216</h1>
+                    <h1 id="electricity-title" class="font-bold text-[24px] mt-2.5 ">বিদ্যুৎ বিভ্রাট</h1>
+                    <p id="electricity-sub-title" class="mt-2.5  text-[20px] text-gray-500">Electricity Outage</p>
+                    <h1 id="electricity-number" class="font-bold text-[28px] mt-4 ">16216</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">বিদ্যুৎ</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="electricity-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="electricity-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -284,22 +286,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">ব্র্যাক</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Brac</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">16445</h1>
+                    <h1 id="brac-title" class="font-bold text-[24px] mt-2.5 ">ব্র্যাক</h1>
+                    <p id="brac-sub-title" class="mt-2.5  text-[20px] text-gray-500">Brac</p>
+                    <h1 id="brac-number" class="font-bold text-[28px] mt-4 ">16445</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">এনজিও</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="brac-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="brac-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -308,6 +310,7 @@
         <!-- Bangladesh Railway -->
           <div class="card-container rounded-xl">
             <div class="bg-white p-8 border border-gray-300 shadow-lg rounded-2xl">
+
                 <div class="flex justify-between items-center">
                     <figure class=" bg-[#FFE3E2] rounded-2xl flex justify-center items-center mt-3 ">
                     <img
@@ -315,22 +318,22 @@
                         class="rounded-xl my-4 mx-4 max-w-8"
                     />
                     </figure>
-                    <i class="ri-heart-line text-[24px] text-gray-500"></i>
+                    <i class="ri-heart-line text-[24px] text-gray-500 cursor-pointer"></i>
                 
                 </div>
 
                 <!-- Card Title -->
                  <div class="mt-3">
-                    <h1 class="font-bold text-[24px] mt-2.5 ">বাংলাদেশ রেলওয়ে</h1>
-                    <p class="mt-2.5  text-[20px] text-gray-500">Bangladesh Railway</p>
-                    <h1 class="font-bold text-[28px] mt-4 ">163</h1>
+                    <h1 id="railway-title" class="font-bold text-[24px] mt-2.5 ">বাংলাদেশ রেলওয়ে</h1>
+                    <p id="railway-sub-title" class="mt-2.5  text-[20px] text-gray-500">Bangladesh Railway</p>
+                    <h1 id="railway-number" class="font-bold text-[28px] mt-4 ">163</h1>
                     <div class="bg-gray-100 w-[130px] text-center rounded-[30px]">
                         <p class="text-gray-600 py-3 px-5 text-[20px] ">পরিবহন</p>
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 "><i class="ri-phone-line"></i> Call</button>
+                    <button id="railway-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="railway-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
             </div>
@@ -363,5 +366,7 @@
 
       </section>
     </main>
+
+    <script src="./assets/script/script.js"></script>
 </body>
 </html>
