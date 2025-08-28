@@ -23,24 +23,23 @@
                     <h1 class="text-[#006747] text-[24px] font-extrabold ml-2">Emergency <br>Service</h1>
                 </div>
             </div>
-            <div class=" md:flex mt-8 md:mt-3">
-                <div class="flex ">
+            <div class="md:flex justify-center mt-8 md:mt-3">
                     <!-- Heart Container -->
-                    <div  class=" mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8 cursor-pointer">
+                    <div  class=" mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex items-center justify-center mr-8 cursor-pointer">
                         <p id="available-heart" class=" text-[30px] font-semibold">0</p>
                         <img src="./assets/heart.png" class="w-12 ml-3" alt="">
                     </div>
 
                     <!-- Coin Container -->
-                    <div  class="mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex mr-8 cursor-pointer">
+                    <div  class="mt-4 py-3 px-9 rounded-[45px] bg-[#ECFFF0] flex items-center justify-center mr-8 cursor-pointer">
                         <p id="available-coin" class="text-[30px] font-semibold">100</p>
                         <img src="./assets/coin.png" class="w-12 ml-3" alt="">
                     </div>
-                </div>
+
 
                 <!-- copy Btn in Navbar -->
-                <div class="mt-4 py-3 cursor-pointer px-11 rounded-[45px] bg-[#00A63E] flex items-center">
-                    <p class="text-[24px] font-semibold text-white"><span id="available-copy">2</span> Copy</p>
+                <div class="mt-4 py-3 cursor-pointer px-11 rounded-[45px] bg-[#00A63E] flex items-center justify-center ">
+                    <p class="text-[24px] font-semibold text-white"><span id="available-copy">0</span> Copy</p>
                 </div>
             </div>
         </nav>
@@ -115,7 +114,7 @@
                     </div>
                  </div>
                  <div class="btn-container mx-auto mt-7 flex justify-center">
-                    <button class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button id="police-copy" class=" border border-gray-400 text-gray-500 w-[45%] text-[20px] py-2 rounded-xl cursor-pointer"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button id="police-call" class="text-white bg-[#00A63E] w-[45%] text-[22px] py-2 rounded-xl ml-4 cursor-pointer"><i class="ri-phone-line"></i> Call</button>
                  </div>
 
@@ -345,21 +344,15 @@
         <aside class="md:col-span-3  md:mt-28 rounded-xl bg-white h-[1050px] border border-gray-300 shadow-xl p-7" id="cart-box">
             <div class="call-history-header flex justify-between items-center">
                 <h1 class="text-[20px] font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
-                <button class="text-[20px] font-semibold text-white py-3 px-8 rounded-[45px] bg-[#00A63E]">Clear</button>
+                <button id="clear" class="text-[20px] font-semibold text-white py-3 px-8 rounded-[45px] bg-[#00A63E] cursor-pointer">Clear</button>
 
             </div>
 
             <!-- History -->
-            <div class="history">
-                <div class="flex justify-between p-6 items-center bg-gray-100 rounded-xl mt-5">
-                    <div>
-                        <h3 class="text-[18px] font-semibold">জাতীয় জরুরি সেবা</h3>
-                        <p class="text-gray-700 text-[16px] mt-3">999</p>
-                    </div>
-                    <p class="text-[18px] font-semibold ml-4">11:36:58 AM</p>
-                </div>
-
-            </div>
+             <div id="history">
+                
+             </div>
+            
           
         </aside>
       </section>
